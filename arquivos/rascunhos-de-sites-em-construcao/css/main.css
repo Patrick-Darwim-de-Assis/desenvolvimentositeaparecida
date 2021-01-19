@@ -1,0 +1,578 @@
+/* 
+ _____   _           _         _                        _                  
+|_   _| | |         | |       | |                      | |                 
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___ 
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams. 
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+    width:100%;
+    height:100%;
+}
+
+#map{
+    height: 50%;
+    width: 50%;
+    top: 20%;
+    left: 5%;
+}
+
+@media screen and (max-width: 463px){
+    #map{
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 335px){
+    #map{
+        top: 30%;
+    }
+}
+
+.caption {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-align: right;
+    color: #fff;
+}
+p, h1 { margin: 0; }
+h1 { margin-bottom: 0.2em; }
+p { line-height: 1.333em; }
+ 
+/* full width/height container */
+#slides-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* double the height/width of a viewport */
+#slides {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+}
+.slide {
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:50%;
+}
+#slide-1 {
+    background: url('../img/fachada-com-opacidade.gif') no-repeat center center;
+    background-size: cover;
+    
+}
+
+    #slide-1 img {
+        position: fixed;
+        width:30%;
+        top: 3%;
+        left: 9%;
+    }
+
+    _:-moz-tree-row(hover), #slide-1 img {
+        width: 55%;
+        top: 5%;
+        left: 23%;
+    }
+
+#slide-2 {
+    background: url('../img/japa-fachada-self-service.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+}
+
+#slide-2 .caption {
+   z-index: 3;
+    /*color: #47373f;*/
+}
+
+    #portfolioImages-container{
+        width: 60%;
+        height: 85%;
+        position: relative;
+        z-index:2;
+    }
+/*
+            #portfolioImages-container img{
+                border-radius: 50%;
+                border-width: 100px;
+                border: 4px solid #ec3434;
+                left: 5%;
+                position: relative;
+                bottom: 57%;
+                width: 360px;
+                height: 270px;
+                top: 20px;
+                box-shadow: 0px 0px black; 
+            }*/
+
+            /*#portfolioImages-container img{
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 50%;
+                border: 8px solid #ec3434;
+                width:360px;
+                height:270px;
+            }*/
+          
+            #portfolioImages-container img{
+                max-width: 100%;
+                max-height: 100%;
+                width:360px;
+                height:270px;
+            }
+
+            .image-mini-container{
+                position: relative;
+                width: 360px;
+                height: 270px;
+                top: 60px;
+                left: 5%;
+                bottom: 57%;
+                border-radius: 50%;
+                border-width: 100px;
+                border: 5px solid #ec3434;;
+                overflow: hidden;
+                box-shadow: 
+                    0 0 0 5px hsl(0, 0%, 0%);
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            /*1.image-mini-container{
+                border-radius: 50%;
+                border-width: 100px;
+                border: 4px solid #ec3434;
+                left: 5%;
+                position: relative;
+                bottom: 57%;
+                width: 360px;
+                height: 270px;
+                top: 20px;
+
+            }
+
+            .image-mini-container:after {
+                  content: '';
+                  position: absolute;
+                  top: -15px;
+                  left: -15px;
+                  right: -15px;
+                  bottom: -15px;
+                  background: black;
+                  z-index: -1;
+            }
+            */
+
+                 @media screen and (max-width: 1200px){
+                    #portfolioImages-container img{
+                        width: 34%;
+                        height: 34%;
+                    }
+                    #portfolioImages-container{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                
+
+                @media screen and (max-width: 1070px){
+                    #portfolioImages-container img{
+                        width: 34.5%;
+                        height: 34.5%;
+                    }
+                }
+
+                @media screen and (max-width: 1030px){
+                    #portfolioImages-container img{
+                        width: 35%;
+                        height: 35%;
+                    }
+                }
+
+                @media screen and (max-width: 990px){
+                    #portfolioImages-container img{
+                        width: 36%;
+                        height: 36%;
+                    }
+                }
+
+                @media screen and (max-width: 950px){
+                    #portfolioImages-container img{
+                        width: 37%;
+                        height: 37%;
+                    }
+                }
+
+                @media screen and (max-width: 910px){
+                    #portfolioImages-container img{
+                        width: 38%;
+                        height: 38%;
+                    }
+                }
+
+                @media screen and (max-width: 870px){
+                    #portfolioImages-container img{
+                        width: 39%;
+                        height: 39%;
+                    }
+                }
+
+                @media screen and (max-width: 830px){
+                    #portfolioImages-container img{
+                        width: 40%;
+                        height: 40%;
+                    }
+                }
+
+#slide-3 {
+    background: url('../img/bcg_slide-3.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,100%);
+    -ms-transform: translate(100%,100%);
+    transform: translate(100%,100%);
+}
+#slide-3 .caption {
+    left: 5%;
+    right: auto;
+    /*color: #47373f;*/
+}
+#slide-4 {
+    background: url('../img/bcg_slide-4.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,0%);
+    -ms-transform: translate(100%,0%);
+    transform: translate(100%,0%);
+}
+
+/*@media screen and (max-width: 900px){
+    #slide-4{
+        background-position: -500px 0px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #slide-4{
+        background-position: -550px 0px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #slide-4{
+        background-position: -600px 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #slide-4{
+        background-position: -650px 0px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #slide-4{
+        background-position: -700px 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #slide-4{
+        background-position: -750px 0px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #slide-4{
+        background-position: -800px 0px;
+    }
+}*/
+
+#slide-4 .caption {
+    right: auto;
+    left: 5%;
+    top: 5%;
+    bottom: auto;
+   /* color: #47373f;*/
+}
+
+#slide-4 .captionB{
+    left: 5%;
+    right: auto;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-align: left;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+
+
+#helper {
+    position:absolute;
+    left:0;
+    top: 0;
+    height:600%;
+    width: 0;
+}
+.marker {
+    height: 25%;
+    width: 100%;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    
+    /* =Caption style */
+    .caption {
+        text-align: right;
+    }
+    #slide-3 .caption,
+    #slide-4 .caption {
+        text-align: left;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* 
+	Ok so you have made it this far, that means you are very keen to on my code. 
+	Anyway I don't really mind it. This is a great way to learn so you actually doing the right thing:)
+	Follow me @ihatetomatoes
+*/
